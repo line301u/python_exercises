@@ -1,0 +1,23 @@
+% include("header", title="Users")
+
+<main>
+    <div id="users">
+
+        % if users == []:
+        <div>
+            no users yet
+        </div>
+        % end
+        % for user in users:
+        <div class="user">
+                <div>{{user["user_id"]}}</div>
+                <div>{{user["user_email"]}}</div>
+        </div>
+        % end
+    </div>
+</main>
+
+</body>
+</html>
+
+% include("footer")
